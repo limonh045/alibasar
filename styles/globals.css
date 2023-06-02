@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+.list-style {
+  @apply hover:bg-[#DCDCDC] w-full text-[14px] px-5 py-1 duration-300 font-medium;
+}
+
+.bell-round {
+  top: 5px;
+  @apply bg-[#e13f3f] right-[-6px] rounded-full h-2 w-2 absolute;
+}
+.bell-icon{
+  height: 35px;
+    max-width: 35px !important;
+}
+.table-colum:hover .popup {
+  left: 150px;
+  @apply absolute w-[18rem] h-[10.5rem]   bg-[#303030] text-white rounded-md duration-500 opacity-100 block;
+}
+.moveproductShow {
+  right: 15px;
+  top: 114px;
+  @apply absolute w-[15rem] h-[10rem]   bg-[#303030] text-white rounded-md duration-500 opacity-100 block;
+}
+
+.tooltip-text,
+.tooltip-text1,
+.tooltip-text2 {
+  display: none;
+  opacity: 0;
+}
+.tooltip:hover .tooltip-text,
+.tooltip:hover .tooltip-text1,
+.tooltip:hover .tooltip-text2 {
+  width: 20rem;
+  background: #fff2d8;
+  padding: 0.8rem;
+  border-radius: 5px;
+  position: absolute;
+  top: 37px;
+  left: 0px;
+  z-index: 2;
+  display: block;
+  opacity: 1;
+  transition: all 2s;
+}
+.tooltip .tooltip-text::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: #fff2d8;
+  top: -8px;
+  left: 10%;
+  transform: translateX(-50%) rotate(45deg);
+}
+.tooltip .tooltip-text1::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: #fff2d8;
+  top: -8px;
+  left: 30%;
+
+  transform: translateX(-50%) rotate(45deg);
+}
+.tooltip .tooltip-text2::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: #fff2d8;
+  top: -8px;
+  left: 55%;
+  transform: translateX(-50%) rotate(45deg);
+}
+.popup{
+  z-index: 99999999;
+}
